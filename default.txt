@@ -19,3 +19,5 @@
   cp -r packages/utils ../joplin/packages/utils
   cp -r packages/lib ../joplin/packages/lib
   cp -r packages/server ../joplin/packages/server
+
+BUILD_SEQUENCIAL=1 yarn install --inline-builds
