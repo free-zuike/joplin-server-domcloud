@@ -1,12 +1,10 @@
   mkdir -p ../joplin/packages/{fork-sax,lib,server}
-  cp -a .yarn/plugins ../joplin/.yarn
-  cp -a .yarn/releases ../joplin/.yarn
-  cp -a .yarn/patches ../joplin/.yarn
   cp -a package.json ../joplin
   cp -a .yarnrc.yml ../joplin
   cp -a yarn.lock ../joplin
   cp -a gulpfile.js ../joplin
   cp -a tsconfig.json ../joplin
+  cp -r .yarn ../joplin/
   cp -r packages/turndown ../joplin/packages/turndown
   cp -r packages/turndown-plugin-gfm ../joplin/packages/turndown-plugin-gfm
   cp -r packages/fork-htmlparser2 ../joplin/packages/fork-htmlparser2
